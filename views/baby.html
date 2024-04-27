@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Baby's Registration Form</title>
+    <link rel="stylesheet" href="Baby's.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <!--NAV-BAR-->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">DayStar</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Get started</a>
+                    <div class="dropdown-content">
+                        <a href="signup.html">Signup</a>
+                        <a href="login.html">Login</a>
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+    <!--REGISTRATION FORM-->
+    <div class="registration-container">
+        <form id="registration-form" class="registration-form" action="/baby" method="post">
+            <h2>Baby's Registration Form</h2>
+            
+            <div class="input-group">
+                <label for="name">Baby's Names</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="input-group">
+                <label for="Age">Age</label>
+                <input type="Age" id="Age" name="Age">
+                </div>
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" >
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="Parent's names">Parent's names</label>
+                    <input type="text" id="Parent's names" name="Parent's names">
+                </div>
+                <div class="input-group">
+                    <label for="time of arrival">Time of arrival</label>
+                    <input type="text" id="time of arrival" name="time of arrival">
+                </div>
+                <div class="input-group">
+                    <label for="Names of the person who brought the Baby">Names of the person who brought the Baby</label>
+                    <input type="text" id="Names of the person who brought the Baby" name="Names of the person who brought the Baby" required>
+                </div>
+                <div class="input-group">
+                    <label for="fees">Fees(ugx)</label>
+                    <input type="text" id="fees" name="fees">
+                </div>
+                <div class="input-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location">
+                </div>
+               
+            <button type="submit">Register</button>
+            <p id="success-message" class="success-message"></p>
+        </form>
+   </div>
+
+    <!--FOOTER-->
+    <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Contact Us</h4>
+                        <p><strong>DayStar Daycare</strong></p>
+                        <p>Kabalagala, Kampala, Uganda</p>
+                        <p>Phone: +256 123 456 789</p>
+                        <p>Email: info@daystardaycare.com</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Follow Us</h4>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--COPYRIGHT-->
+        <p>&copy; 2024 DayStar Daycare Management. All rights reserved.</p>
+
+        <script src="/Javascript/sitters.js"></script>
+</body>
+
+</html>
